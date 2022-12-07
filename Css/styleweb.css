@@ -1,0 +1,189 @@
+/*Css reset*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Css variables*/
+:root
+{
+    --navbar-height:59px;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+
+}
+
+#logo
+{
+    margin: 8px 14px;
+}
+#logo img
+{
+    margin: 2px 4px;
+    height: 35px;
+}
+#navbar
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before
+{
+    content: "";
+    background-color: gray;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+#navbar ul li 
+{
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+#navbar ul li a 
+{
+    display: block;
+    padding: 6px 24px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover 
+{
+    background-color: white;
+    color: black;
+}
+
+#navbar .right
+{
+    position: absolute;
+    right: 60px;
+}
+#navbar .right .btn
+{
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: #5f568f;
+    padding: 5px 0px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 2px solid #4c3461;
+    cursor: pointer;
+    
+}
+#navbar .right .btn a
+{
+    color: white;
+    padding: 0px 26px;
+    text-decoration: none;
+}
+#navbar .right .btn a:hover{
+    color:#1df3d6;
+}
+
+
+#home
+{
+    font-family: 'Bitter', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 290px;
+    align-items: center;
+    padding: 0px 200px;
+}
+#home::before
+{
+    content: "";
+    background: url('../img/image.jpg') no-repeat center center/cover;
+    position: absolute;
+    background-position: 0px 0px;
+    background-size: cover;
+    height: 200%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+.hprimary
+{
+    
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.hsecondary
+{
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    padding: 12px;
+}
+
+#game
+{
+    margin: 34px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+.Games .heading
+{
+    font-size: 2rem;
+}
+#game .box
+{
+    border: 2px solid #131010;
+    padding: 25px;
+    margin: 20px 10px;
+    border-radius: 23px;
+    background-color: #61717c;
+}
+#game .box img
+{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+#game .btn {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #807a7a;
+    padding: 5px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+#game .btn a{
+
+    text-decoration: none;
+    color: black;
+}
+
+#game .box p
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#game .btn a:hover
+{
+    color: white;
+}
